@@ -15,26 +15,44 @@
         <div class="return">
             <div class="returnbut"></div>
         </div>
+        <div class = "name"> Dodaj ogłoszenie </div>
 
 </div>
 <div class="navbar"></div>
 <div class ="mainbdy">
     <form>
-        <div class="title">Temat wydarzenia</div>
-        <input type="text" class="inputbox">
-        <div class="title">Data rozpoczęcia</div>
-        <input type="date" class="inputbox">
-        <div class="title">Godzina rozpoczęcia</div>
-        <input type="Time" class="inputbox">
-        <div class="title">Miejsce wydarzenia</div>
-        <select class="inputbox">
-            <option value="Budynek 100"">SZTAB</option>
-            <option value="Stadion"">Stadion</option>
-            <option value="Biblioteka"">Biblioteka</option>
-            <option value="Budynek 65"">Budynek 65</option>
-        </select>
-        <div class="title"></div>
-    </form>
+        <div class="form-container">
+          <label class = "lable">Tytuł*</label>
+          <input class="inputbox" type="text"  >
+        </div>
+        <div class="form-container">
+          <label class = "lable">Kategoria*</label>
+          <input class="inputbox" type="text">
+        </div>
+        <div class="form-container">
+            <label class = "lable">Wydział*</label>
+            <select class ="inputbox">
+                <option></option>
+            </select>
+          </div>
+          <div class="form-container">
+            <label class = "lable">Data*</label>
+            <input class="inputbox" type="date">
+        </div>
+        <div class="form-container">
+          <label class = "lable">Godzina*</label>
+          <input class="inputbox" type="time">
+        </div>
+        <div class="form-container">
+            <label class = "lable">Dodaj zdjęcie</label>
+            <input class="addbutton" type="button" >
+          </div>
+          <div class="form-container">
+            <label class = "lable">Godzina*</label>
+            <input class="inputbox" type="time">
+          </div>
+        <input  type="submit" value="Submit">
+      </form>
 </div>
 <script src="./newPost.js"></script>    
 </body>

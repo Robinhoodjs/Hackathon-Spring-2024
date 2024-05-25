@@ -2,12 +2,14 @@ class AppUser {
   final String id;
   String email;
   String username;
+  String facultaty;
   final String token;
 
   AppUser(
     this.id,
     this.email,
     this.username,
+    this.facultaty,
     this.token,
   );
 
@@ -15,6 +17,7 @@ class AppUser {
         'id': id,
         'email': email,
         'username': username,
+        'facultaty': facultaty,
         'token': token,
       };
 
@@ -27,6 +30,7 @@ class AppUser {
       map['id'],
       map['email'],
       map['username'],
+      map['facultaty'],
       map['token'],
     );
   }
@@ -36,6 +40,7 @@ class AppUser {
       '',
       '',
       map['username'],
+      '',
       '',
     );
   }

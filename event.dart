@@ -1,13 +1,11 @@
-import 'package:hackaton/models/appuser.dart';
-
 class Event {
   final String id;
   String name;
   String description;
   final List<dynamic> pictures;
-  AppUser organizator;
+  String organizatorId;
   String facultaty;
-  DateTime time;
+  String time;
   List<dynamic>? listOfStringPictures;
 
   Event(
@@ -15,7 +13,7 @@ class Event {
     this.name,
     this.description,
     this.pictures,
-    this.organizator,
+    this.organizatorId,
     this.facultaty,
     this.time,
   );
@@ -25,7 +23,7 @@ class Event {
         'name': name,
         'description': description,
         'pictures': pictures,
-        'organizator': organizator,
+        'organizator': organizatorId,
         'facultaty': facultaty,
         'time': time,
       };
@@ -36,9 +34,9 @@ class Event {
       map['title'],
       map['description'],
       map['imageList'],
-      map['organizator'],
+      map['idCreatedBy'],
       map['facultaty'],
-      map['time'],
+      map['dateTime'],
     );
   }
 }

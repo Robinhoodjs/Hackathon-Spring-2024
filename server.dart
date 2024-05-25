@@ -85,6 +85,7 @@ class Server {
       userData.id,
       userData['email'],
       userData['username'],
+      userData['facultaty'],
       userData['token'],
     );
     return toReturn;
@@ -134,10 +135,10 @@ class Server {
       'title': event.name,
       'description': event.description,
       'imageList': event.pictures,
-      'createdBy': event.organizator.toJsonLimited(),
       'indexList': indexList,
-      'idCreatedBy': event.organizator.id,
+      'idCreatedBy': event.organizatorId,
       'facultaty': event.facultaty,
+      'dateTime': event.time,
     });
   }
 

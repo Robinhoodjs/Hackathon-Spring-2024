@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "122334640804",
+    "project_id": "hackaton-b2efc",
+    "storage_bucket": "hackaton-b2efc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:122334640804:android:1670c38d2103b6aa534431",
+        "android_client_info": {
+          "package_name": "com.example.hackaton"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDa8qzbP4nBmF_kPsnkL2C8uM5lJrSMtzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

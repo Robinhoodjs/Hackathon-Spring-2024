@@ -177,4 +177,17 @@ a{
         justify-content: flex-start;
         align-items: center;
     }
+    .return{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .returnbut{
+        background-image:url(./angle-left.png);
+        background-size: contain;
+        background-repeat:no-repeat;
+        width: 80%;
+        height: 50%;
+        
+    }
 }

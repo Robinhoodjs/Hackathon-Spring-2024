@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dodaj Ogłoszenie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <link rel="stylesheet" href="tworzenie.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
+    <style>
+        .choices__list--multiple .choices__item {
+            background-color: #1E3F20;
+            color: white;
+            border: 1px solid #1E3F20;
+        }
+        .choices__list--multiple .choices__item[data-deletable] {
+            padding-right: 2.5em;
+        }
+        .choices__list--multiple .choices__item .choices__button {
+            color: white;
+            line-height: 1;
+            margin-left: 8px;
+        }
+        .choices__list--multiple .choices__item.is-highlighted {
+            background-color: #145214;
+            border-color: #145214;
+        }
+        .choices__list--multiple {
+            max-width: 100%; /* Zapobiega powiększaniu ramki */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dodaj Ogłoszenie</h1>
+        </header>
+        <form>
+            <div class="profile">
+                <img src="/images/Popraw.png" alt="Imie Nazwisko">
+                <p>Imie Nazwisko</p>
+            </div>
+            <div class="form-group">
+                <label for="title">Tytuł</label>
+                <input type="text" id="title" placeholder="Np. Wspólne Granie w Kosza">
+            </div>
+            <div class="form-group">
+                <label for="category">Kategoria</label>
+                <input type="text" id="category" placeholder="Sport">
+            </div>
+            <div class="form-group">
+                <label for="departments">Wydział(y)</label>
+                <select id="choices-multiple-remove-button" multiple>
+                    <option value="Wszystkie Wydziały">Wszystkie Wydziały</option>
+                    <option value="Wydział 1">Wydział 1</option>
+                    <option value="Wydział 2">Wydział 2</option>
+                    <option value="Wydział 3">Wydział 3</option>
+                    <!-- Dodaj więcej opcji według potrzeby -->
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Data</label>
+                <input type="date" id="date">
+            </div>
+            <div class="form-group">
+                <label for="time">Godzina</label>
+                <input type="time" id="time">
+            </div>
+            <div class="form-group">
+                <label for="photo">Zdjęcia</label>
+                <input type="file" id="photo">
+                <label for="photo" class="file-label">Wybierz plik</label>
+            </div>
+            <div class="form-group">
+                <label for="description">Opis</label>
+                <textarea id="description" placeholder="Lokalizacja, szczegóły"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="email">Adres email</label>
+                <input type="email" id="email" placeholder="studentwat@wat.edu.pl">
+            </div>
+            <div class="form-group">
+                <label for="phone">Nr. telefonu</label>
+                <input type="tel" id="phone" placeholder="+48 101 010 001">
+            </div>
+            <div class="form-group">
+                <label for="limit">Limit miejsc</label>
+                <input type="number" id="limit" placeholder="Dodaj limit">
+            </div>
+            <button type="submit">Dodaj ogłoszenie</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <nav>
+            <a href="#" class="nav-link">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-search"></i>
+                <span>Wyszukaj</span>
+            </a>
+            <a href="#" class="nav-link">
+                <i class="fas fa-bullhorn"></i>
+                <span>Ogłoszenia</span>
+            </a>
+        </nav>
+    </footer>
+    <script  src="script.js"></script>
+</body>
+</html>

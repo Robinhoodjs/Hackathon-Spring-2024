@@ -124,4 +124,30 @@ const filluppage = async () =>{
 
 }
 
+//funkcja kliknięcie; ignoruje swipe i drag events
+let touchStartX = 0;
+let touchEndX = 0;
+
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    // If the touch did not move horizontally, it's a tap, not a swipe
+    if (touchStartX === touchEndX) {
+      if (this.className === 'returnbut') {
+        window.location.href = "http://www.example.com";
+    } else if (this.className === 'addbut') {
+      window.location.href = "http://www.example.com";//wstaw adresy stronek
+    }
+    }
+}
+
+let button = document.querySelector('.returnbut');
+
+// Add the event listeners to the button
+button.addEventListener('touchstart', handleTouchStart, false);
+button.addEventListener('touchend', handleTouchEnd, false);
+
 filluppage()

@@ -27,16 +27,17 @@
 <script>
     function chooseMap(placeID)
         {
+            //w zalezności od przyjętego atrybutu ID podmienia mapę na 0 (biblioteke) 1(sztab) 2(stadion)
             let iframe = document.querySelector("#map");
-            if(placeID == "Biblioteka")
+            if(placeID == 0)
             {
                 iframe.setAttribute(src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=52%C2%B015'10.8%22N%2020%C2%B053'44.6%22E+(My%20Business%20Name)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed");
             }
-            else if(placeID =="Sztab")
+            else if(placeID ==1)
             {
                 iframe.setAttribute(src="https://maps.google.com/maps?width=100%25&amp;height=800&amp;hl=en&amp;q=52.253159,%2020.900193+(My%20Business%20Name)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed");
             }
-            else if(placeID =="Stadion")
+            else if(placeID ==2)
             {
                 iframe.setAttribute(src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=52.252229,%2020.892419+(My%20Business%20Name)&amp;t=k&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed");
             }

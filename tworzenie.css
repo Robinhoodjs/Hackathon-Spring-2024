@@ -182,3 +182,6 @@ button:hover {
     background-color: #145214;
     border-color: #145214;
 }
+.choices__list--multiple {
+    max-width: 100%; 
+}

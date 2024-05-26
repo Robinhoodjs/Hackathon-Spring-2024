@@ -9,28 +9,7 @@
     <link rel="stylesheet" href="tworzenie.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
-    <style>
-        .choices__list--multiple .choices__item {
-            background-color: #1E3F20;
-            color: white;
-            border: 1px solid #1E3F20;
-        }
-        .choices__list--multiple .choices__item[data-deletable] {
-            padding-right: 2.5em;
-        }
-        .choices__list--multiple .choices__item .choices__button {
-            color: white;
-            line-height: 1;
-            margin-left: 8px;
-        }
-        .choices__list--multiple .choices__item.is-highlighted {
-            background-color: #145214;
-            border-color: #145214;
-        }
-        .choices__list--multiple {
-            max-width: 100%; /* Zapobiega powiększaniu ramki */
-        }
-    </style>
+  
 </head>
 <body>
     <div class="container">
@@ -54,10 +33,14 @@
                 <label for="departments">Wydział(y)</label>
                 <select id="choices-multiple-remove-button" multiple>
                     <option value="Wszystkie Wydziały">Wszystkie Wydziały</option>
-                    <option value="Wydział 1">Wydział 1</option>
-                    <option value="Wydział 2">Wydział 2</option>
-                    <option value="Wydział 3">Wydział 3</option>
-                    <!-- Dodaj więcej opcji według potrzeby -->
+                    <option value="Wydział Bezpieczeństwa Logistyki I Zarządzania">Wydział Bezpieczeństwa Logistyki I Zarządzania</option>
+                    <option value="Wydział Cybernetyki">Wydział Cybernetyki</option>
+                    <option value="Wydział Elektroniki">Wydział Elektroniki</option>
+                    <option value="Wydział Inżynierii Lądowej i Geodezji">Wydział Inżynierii Lądowej i Geodezji</option>
+                    <option value="Wydział Inżynierii Mechanicznej">Wydział Inżynierii Mechanicznej</option>
+                    <option value="Wydział Mechatroniki, Uzbrojenia i Lotnictwa">Wydział Mechatroniki, Uzbrojenia i Lotnictwa</option>
+                    <option value="Wydział Nowych Technologii I Chemii">Wydział Nowych Technologii I Chemii</option>
+                    <option value="Instytut Optoelektroniki">Instytut Optoelektroniki</option>
                 </select>
             </div>
             <div class="form-group">

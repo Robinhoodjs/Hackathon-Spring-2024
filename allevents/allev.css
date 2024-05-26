@@ -22,11 +22,27 @@ margin-top: 5px;
 p{
 margin-top: 15px;
 }
-@media only screen and (max-width: 600px) {
+a{
+    cursor:pointer;
+    color:inherit;
+    text-decoration:none;
+    pointer-events:none;
+}
+@media only screen and (max-width: 700px) {
+    a{
+        cursor:pointer;
+        color:inherit;
+        text-decoration:none;
+        pointer-events:none;
+    }
     body {
       background-color: #e0e0e2;
       width: 100%;
       height: auto;
+    }
+    .topnav{
+        display: flex;
+        justify-content: space-between;
     }
     .add{
         display: flex;
@@ -43,7 +59,7 @@ margin-top: 15px;
 
     .feed{
         width: 100%;
-        height: 200vh;
+        height: 600vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -52,7 +68,7 @@ margin-top: 15px;
     .post{
         margin-top: 30px;
         width: 90vw;
-        height: 130vw;
+        height: 60vh;
         border: black solid 2px;
         display: flex;
         flex-direction: column;
@@ -74,7 +90,10 @@ margin-top: 15px;
         justify-content: flex-start;
     }
     .userpng{
-        background-color:blue;
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/hackaton-b2efc.appspot.com/o/person(pp_w480_h610)-2672349083.jpg?alt=media&token=c527c11c-0586-4f26-ae6f-82c8248b3c63)");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center;
         border-radius: 100%;
         height: 7vh;
         width: 7vh;
@@ -101,7 +120,7 @@ margin-top: 15px;
         height: 32px;   
         position: relative;
         top:0;
-        right: -90px;
+        right: -50px;
 
     }
     .posttime{
@@ -111,19 +130,19 @@ margin-top: 15px;
     .postpng{
         width: 85vw;
         height: 85vw;
-        background-color: red;
         border-radius: 10px;
         margin-top: 5px;
     }
     .postbot{
         margin-top: 5px;
-        width: 100%;
+        width:100%;
         height: 10vh;
     }
     .shortpostdesc{
         font-size: 18px;
         font-weight: 400;
-
+        text-align: start;
+        margin-left: 20px;
     }
     .signed{
         margin-left: 15px;
@@ -160,5 +179,11 @@ margin-top: 15px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
+    }
+    button{
+        padding: none;
+        margin:none;
+        border: none;
+        background-color: #e0e0e2;
     }
 }

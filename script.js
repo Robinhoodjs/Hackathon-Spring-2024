@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 $(document).ready(function() {
     var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
         removeItemButton: true,
-        maxItemCount: 5,
-        searchResultLimit: 5,
-        renderChoiceLimit: 5
+        maxItemCount: 9,
+        searchResultLimit: 9,
+        renderChoiceLimit: 9
     });
 
     $('#choices-multiple-remove-button').on('change', function(event) {

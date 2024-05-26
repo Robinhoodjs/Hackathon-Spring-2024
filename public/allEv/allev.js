@@ -93,16 +93,35 @@ console.log(events[0].id)
 //czesc pracujaca z apka
 
 const feed = document.getElementsByClassName("feed")[0]
+// let post = feed.children[0]
+// post.addEventListener("click",()=>{
+//     console.log(`${index}`)
+// })
+for(let i = 0;i<events.length;i++){
+    feed.appendChild(document.createElement("button"))
+    let post = feed.children[i]
+    
+    post.href="https://www.w3schools.com"
+}
 console.log(events.length)
 //loopka dodająca posty
 const filluppage = async () =>{
+    const addbut = document.getElementsByClassName("addbut")[0];
+
+    console.log(addbut)
+    const returnbut = document.getElementsByClassName("returnbut")
     for (let index = 0; index < events.length; index++) {
         let usr = doc(db,"users",`${events[index].creator}`)
         let usrsnap = await getDoc(usr);
-        feed.innerHTML += `<a href="https://www.w3schools.com"><div class="post" id="${events[index].id}"><div class="posttop"><div class="user"><img class="userpng" src="${usrsnap.data().image}"><div class="userinfo"><div class="userinfo-cont"><div class="username">${usrsnap.data().username}</div><div class="cat"> w Edukacji</div></div><div class="posttime">3 minuty temu</div></div><div class="extenduserinfo"></div></div></div><img class="postpng" src="${events[index].image}"><div class="postbot"><p class="shortpostdesc">${events[index].title}</p><div class="posticons"><div class="signed"><div class="heart"></div><div class="signed-count">21 zapisanych</div></div><div class="coms"><div class="comsico"></div><div class="coms-count">4 komentarze</div></div></div></div></div></a>
+        feed.children[index].innerHTML += `<div class="post" id="${events[index].id}"><div class="posttop"><div class="user"><img class="userpng" src="${usrsnap.data().image}"><div class="userinfo"><div class="userinfo-cont"><div class="username">${usrsnap.data().username}</div><div class="cat"> w Edukacji</div></div><div class="posttime">3 minuty temu</div></div><div class="extenduserinfo"></div></div></div><img class="postpng" src="${events[index].image}"><div class="postbot"><p class="shortpostdesc">${events[index].title}</p><div class="posticons"><div class="signed"><div class="heart"></div><div class="signed-count">21 zapisanych</div></div><div class="coms"><div class="comsico"></div><div class="coms-count">4 komentarze</div></div></div></div></div>
         `
-
+        let post = feed.children[index]
+        console.log(post)
+        post.addEventListener('touchstart',()=>{
+            console.log(`${index}`)
+        })
     }
+
 }
+
 filluppage()
-const test = document.body

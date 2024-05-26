@@ -177,4 +177,10 @@ a{
         justify-content: flex-start;
         align-items: center;
     }
+    button{
+        padding: none;
+        margin:none;
+        border: none;
+        background-color: #e0e0e2;
+    }
 }

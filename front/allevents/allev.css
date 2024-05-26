@@ -190,4 +190,15 @@ a{
         height: 50%;
         
     }
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+    }
+    .namep{
+        margin: 0;
+    }
 }

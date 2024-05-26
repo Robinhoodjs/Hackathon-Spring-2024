@@ -191,6 +191,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        float: left;
     }
     .returnbut{
         background-image:url(./angle-left.png);
@@ -201,6 +202,7 @@ a{
         
     }
     .name{
+        float: right;
         display: flex;
         justify-content: center;
         align-items: center;

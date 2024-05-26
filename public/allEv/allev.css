@@ -28,7 +28,7 @@ a{
     text-decoration:none;
     pointer-events:none;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     a{
         cursor:pointer;
         color:inherit;
@@ -46,7 +46,7 @@ a{
         justify-content: center;
     }
     .addbut{
-        background-image:url(./add.png);
+        background-image:url(images/add.png);
         background-size: contain;
         background-repeat:no-repeat;
         width: 80%;
@@ -109,7 +109,7 @@ a{
         font-weight: 500;
     }
     .extenduserinfo{
-        background-image: url(./menu-dots.png);
+        background-image: url(images/menu-dots.png);
         background-size: contain;
         background-repeat:no-repeat;
         width: 32px;
@@ -126,7 +126,6 @@ a{
     .postpng{
         width: 85vw;
         height: 85vw;
-        background-color: red;
         border-radius: 10px;
         margin-top: 5px;
     }
@@ -151,7 +150,7 @@ a{
         
     }
     .heart{
-        background-image:url(./heart.png);
+        background-image:url(images/heart.png);
         background-size: contain;
         background-repeat:no-repeat;
         width: 32px;
@@ -166,7 +165,7 @@ a{
         align-items: center;
     }
     .comsico{
-        background-image:url(./comment-alt.png);
+        background-image:url(images/comment-alt.png);
         background-size: contain;
         background-repeat:no-repeat;
         width: 32px;

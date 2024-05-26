@@ -1,0 +1,60 @@
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #e0e0e2;
+      width: 100%;
+      height: auto;
+    }
+    .page{
+        width: 100vw;
+        height: 100vh;
+        background-color: #e0e0e2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topnav{
+        width: 100%;
+        height: 8vh;
+
+        border-bottom: 1px #52465D solid;
+        display: grid;
+        grid-template-columns: 15% auto 15%;
+    }
+    .return{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .returnbut{
+        background-image:url(./angle-left.png);
+        background-size: contain;
+        background-repeat:no-repeat;
+        width: 80%;
+        height: 50%;
+        
+    }
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        text-align: center;
+    }
+    .namep{
+        margin: 0;
+        font-size: 22px;
+    }
+
+
+    .navbar{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 10vh;
+        background-color:#0B6E4F;
+        margin:0;
+    }
+
+  }

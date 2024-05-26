@@ -1,0 +1,68 @@
+
+/* dwie wersje(bardziej dopracować tą na telefon) */
+/* kolorki:
+czarny : #0C090D
+kolor tła 2: #52465D
+zielony: #0B6E4F
+kontrast: #F1A208
+neutralny: #E0E0E2
+*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+h3{
+margin-top: 10px;
+}
+h4{
+margin-top: 5px;
+}
+p{
+margin-top: 15px;
+}
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: #e0e0e2;
+      width: 100%;
+      height: auto;
+    }
+
+    .shortpostdesc{
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+    .form-container
+    {
+        padding: 15px;
+        font-size: 18px;
+        border-bottom: solid 1px #bbbbbb;
+    }
+    .label
+    {
+        padding: 15px;
+        margin-right: 20px;
+    }
+    .inputbox
+    {
+        margin-right:20px;
+        float: right;
+        width:60%;
+        height: 30px;
+    }
+    .addbutton{
+        float: right;
+        height: 20px;
+        width: 20px;
+        background-color: #0B6E4F;
+    }
+}

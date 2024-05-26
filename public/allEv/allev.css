@@ -53,8 +53,8 @@ a{
         background-image:url(./add.png);
         background-size: contain;
         background-repeat:no-repeat;
-        width: 80%;
-        height: 50%;
+        width: 35px;
+        height: 35px;
     }
 
     .feed{
@@ -126,6 +126,7 @@ a{
     .posttime{
         font-size: 15px;
         font-weight: 400;
+        text-align: start;
     }
     .postpng{
         width: 85vw;
